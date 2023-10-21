@@ -30,9 +30,10 @@ module.exports = {
   plugins: [
     // Generates an HTML file from a template
     new HtmlWebpackPlugin({
-      title: 'Webpack-js', // The title to use for the generated HTML document
+      title: 'Miami Condo Kings', // The title to use for the generated HTML document
       template: `${paths.src}/template.html`, // Webpack relative or absolute path to the template
       filename: 'index.html', // The file to write the HTML to
+      favicon: `${paths.src}/assets/favicon/icon-corona-virus-24-24.png`,
     }),
     // Cleans the dist folder before new run
     new CleanWebpackPlugin(),
