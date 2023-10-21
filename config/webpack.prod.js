@@ -18,11 +18,10 @@ module.exports = merge(common, {
 
   // Where webpack outputs the assets and bundles in production mode
   output: {
-    filename: '[name].[contenthash].bundle.js',
     path: paths.build,
-    clean: true,
-    publicPath: 'assets/',
+    filename: '[name].[contenthash].bundle.js',
     assetModuleFilename: 'assets/[name].[contenthash][ext][query]',
+    clean: true,
   },
 
   // Controls how source maps are generated
