@@ -1,4 +1,4 @@
-// Import plugins
+// Import of plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
@@ -70,7 +70,7 @@ module.exports = {
     },
     minimize: true,
     minimizer: [
-      // Optimizes assets
+      // Optimizes image assets
       new ImageMinimizerPlugin({
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
@@ -113,9 +113,6 @@ module.exports = {
 
   // Performance
   performance: {
-    assetFilter(assetFilename) {
-      return assetFilename.endsWith('.ttf');
-    },
     hints: 'warning',
     maxAssetSize: 512000,
     maxEntrypointSize: 512000,
