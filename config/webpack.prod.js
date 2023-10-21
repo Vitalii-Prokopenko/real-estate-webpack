@@ -64,4 +64,11 @@ module.exports = merge(common, {
       }),
     ],
   },
+
+  // Performance
+  performance: {
+    hints: false,
+    maxAssetSize: 900000,
+    maxEntrypointSize: 900000,
+  },
 });

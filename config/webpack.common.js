@@ -110,11 +110,4 @@ module.exports = {
       new ImageminWebpWebpackPlugin(),
     ],
   },
-
-  // Performance
-  performance: {
-    hints: 'warning',
-    maxAssetSize: 512000,
-    maxEntrypointSize: 512000,
-  },
 };
